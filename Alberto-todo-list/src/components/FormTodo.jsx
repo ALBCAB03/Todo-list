@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const FormTodo = Todo => {
+const FormTodo = Ftodo => {
   /*Se crean estados asociados a
   - handleAddItem : variable con la funcion que actualiza nuestra lista
   - description : estado para el manejo de la descripcion actual, permite resetear variable
   */
-  const { handleAddItem } = Todo;
+  const { handleAddItem } = Ftodo;
   const [description, setDescription] = useState("");
 
   /** Funcion permite resetear el formulario*/

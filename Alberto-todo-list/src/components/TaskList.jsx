@@ -1,9 +1,8 @@
-import React from "react";
 import Checkbox from "./Activity";
 
-const TaskList = Todo => {
+const TaskList = props => {
   /** la entrada al TaskList es la lista y el estado de la misma */
-  const { list, setList } = Todo;
+  const { list, setList } = props;
 
  /** Cambiar a realizado el es estado de la actividad cuando se chequee*/
   const onChangeStatus = e => {
@@ -28,9 +27,9 @@ const TaskList = Todo => {
 
   return (
     <div className="Todo-list">
-      
+
       {list.length ? chk : "No tasks"}
-      
+
       {list.length ? (
         <p>
           <button className="button-delete" onClick={onClickRemoveItem}>
